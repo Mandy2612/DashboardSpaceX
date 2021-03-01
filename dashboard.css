@@ -1,0 +1,506 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: linear-gradient(-15deg,black,#393A4F) fixed no-repeat;
+	background-size: cover;
+}
+
+/*Logo opmaak*/
+.logo img{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 55%;
+	height: 45%;
+	margin-top: -19%;
+}
+
+.logo figcaption{
+	font-family: Berlin Sans FB;
+	font-size: 12px;
+	color: white;
+	text-align: center;
+	margin-top: -22%;
+}
+/*Einde logo opmaak*/
+
+/*Opmaak alle h1 titels*/
+h1{
+	font-size: 12px;
+	color: white;
+	font-family: Bahnschrift;
+	padding: 0px 0px 20px 10px;
+}
+/*Einde h1 opmaak*/
+
+/*Grid wordt aangemaakt*/
+.grid-container{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 20px;
+	align-items: center;
+	padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #35334A;
+  padding: 20px 0;
+  overflow: auto;
+  position: relative;
+}
+/*Einde grid-container opmaak*/
+
+/*Datum opmaak*/
+.vak1{
+	grid-column-start: 1;
+ 	grid-column-end: 3;
+}
+
+.datum{
+	background: linear-gradient(180deg,#9C60FD,#815FB8);
+	height: 80px;
+	width: 80%;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+}
+
+.datum #dag{
+	color: white;
+	font-family: Bahnschrift;
+	font-size: 11px;
+	text-align: left;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+.datum #datum{
+	color: white;
+	font-family: Bahnschrift;
+	font-size: 12px;
+	text-align: center;
+	padding-top: 5px;
+
+}
+
+.datum #time{
+	color: white;
+	font-family: Bahnschrift;
+	font-size: 12px;
+	text-align: center;
+	padding-top: 10px;
+}
+/*Einde datum opmaak*/
+
+/*Line chart opmaak*/
+.vak2{
+	grid-column-start: 1;
+ 	grid-column-end: 3;
+ 	margin-top: -45px;
+}
+
+.vak2 #day{
+	font-size: 12px;
+	color: white;
+	font-family: Bahnschrift;
+	padding: 0px 0px 20px 10px;
+	text-align: right;
+	padding-right: 10px;
+}
+/*Einde line chart opmaak*/
+
+/*Half doughnut opmaak*/
+.vak3{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	max-width: 100%;
+	height: 100%;
+}
+
+.vak3 canvas{
+	max-width: 300px;
+	height: 240px;
+	margin: auto;
+}
+
+.vak3 p{
+	text-align: center;
+	color: white;
+	font-family: Bahnschrift;
+	font-size: 13px;
+	margin-top: -30px;
+}
+/*Einde half doughnut opmaak*/
+
+/*Doughnut opmaak*/
+.vak4{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	max-width: 100%;
+	height: 100%;
+}
+
+.vak4 canvas{
+	max-width: 300px;
+	height: 250px;
+	margin: auto;
+}
+/*Einde doughnut opmaak*/
+
+/*Bar chart opmaak*/
+.vak5{
+	grid-column-start: 1;
+ 	grid-column-end: 3;
+
+}
+
+/*Einde bar chart opmaak*/
+
+/*Button opmaak*/
+
+.button{
+	background-color: #9C60FD;
+	color: white;
+	font-family: Bahnschrift;
+	padding: 10px 30px 10px 30px;
+	text-align: center;
+	display: block;
+	font-size: 11px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	cursor: pointer;
+	border: none;
+	border-radius: 7px;
+}
+
+.button:hover{
+	background-color: #8c47fc;
+}
+
+/*Einde button opmaak*/
+
+/*Start Ipad device*/
+@media only screen and (min-device-width: 768px){
+
+/*Logo opmaak*/
+.logo img{
+	width: 45%;
+	height: 35%;
+	margin-top: -19%;
+	
+}
+
+.logo figcaption{
+	font-size: 13px;
+	margin-top: -19%;
+	margin-bottom: 15px;
+}
+/*Einde logo opmaak*/
+
+/*Opmaak alle h1 titels*/
+h1{
+	font-size: 13px;
+}
+/*Einde h1 opmaak*/
+
+/*Datum opmaak*/
+.datum{
+	height: 90px;
+	width: 85%;
+	margin-top: 7px;
+}
+
+.datum #dag{
+	font-size: 12px;
+}
+
+.datum #datum{
+	font-size: 13px;
+	padding-top: 12px;
+}
+
+.datum #time{
+	font-size: 13px;
+}
+/*Einde datum opmaak*/
+
+/*Line chart opmaak*/
+.vak2 #day{
+	font-size: 13px;
+}
+/*Einde line chart opmaak*/
+
+/*Half doughnut opmaak*/
+.vak3 canvas{
+	max-width: 300px;
+	height: 240px;
+}
+
+.vak3 p{
+	font-size: 14px;
+	margin-top: -40px;
+}
+/*Einde half doughnut opmaak*/
+
+/*Doughnut opmaak*/
+.vak4 canvas{
+	max-width: 300px;
+	height: 300px;
+}
+/*Einde doughnut opmaak*/
+
+/*Bar chart opmaak*/
+.vak5{
+	grid-column-start: 1;
+ 	grid-column-end: 3;
+
+}
+/*Einde bar chart opmaak*/
+
+/*Button opmaak*/
+
+.button{
+	font-size: 12px;
+}
+/*Einde button opmaak*/
+}
+
+/*Einde tablet device*/
+
+/*Start kleine desktop*/
+@media screen and (min-width: 1280px){
+/*Logo opmaak*/
+.logo img{
+	width: 25%;
+	height: 15%;
+	margin-top: -10%;
+}
+
+.logo figcaption{
+	font-size: 13px;
+	margin-top: -10%;
+}
+/*Einde logo opmaak*/
+
+/*Opmaak alle h1 titels*/
+h1{
+	padding-bottom: 30px;
+	padding-top: 10px;
+	font-size: 12px;
+}
+/*Einde h1 opmaak*/
+
+/*Grid wordt aangemaakt*/
+.grid-container{
+	display: grid;
+	grid-template-columns: 100px 240px 1fr 1fr 100px;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 15px;
+  
+}
+
+.grid-container > div {
+  background-color: #35334A;
+  padding: 10px;
+  overflow: auto;
+  position: relative;
+  
+}
+/*Einde grid-container opmaak*/
+
+/*Datum opmaak*/
+.vak1{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 4;
+	height: 98%;
+	margin-top: -6%;
+	
+}
+
+.datum{
+	background: linear-gradient(180deg,#9C60FD,#815FB8);
+	height: 80%;
+	width: 80%;
+}
+
+.datum #dag{
+	font-size: 13px;
+	text-align: center;
+	padding-top: 80%;
+}
+
+.datum #datum{
+	font-size: 14px;
+	padding-top: 20%;
+
+}
+
+.datum #time{
+	font-size: 14px;
+}
+/*Einde datum opmaak*/
+
+/*Line chart opmaak*/
+.vak2{
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	margin-top: 0px;
+	
+}
+
+.vak2 #day{
+	font-size: 13px;
+	padding-right: 10px;
+}
+/*Einde line chart opmaak*/
+
+/*Half doughnut opmaak*/
+.vak3{
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+.vak3 canvas{
+	min-width: 300px;
+	min-height: 140px;
+	margin-top: 30px;
+}
+
+.vak3 p{
+	font-size: 14px;
+	margin-top: -40px;
+}
+/*Einde half doughnut opmaak*/
+
+/*Doughnut opmaak*/
+.vak4{
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	height: 100%;
+	
+}
+
+.vak4 canvas{
+	max-width: 500px;
+	height: 500px;
+}
+/*Einde doughnut opmaak*/
+
+/*Bar chart opmaak*/
+.vak5{
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	height: 100%;
+
+}
+/*Einde bar chart opmaak*/
+
+/*Button opmaak*/
+
+.button{
+	padding: 10px 35px 10px 35px;
+	font-size: 12px;
+	margin-top: 0px;
+	border-radius: 10px;
+}
+/*Einde button opmaak*/
+}
+/*Einde kleine desktop*/
+
+/*Start grote desktop*/
+@media screen and (min-width: 1920px){
+
+/*Logo opmaak*/
+.logo img{
+	width: 30%;
+	height: 20%;
+	margin-top: -12%;
+}
+
+.logo figcaption{
+	font-size: 14px;
+	margin-top: -12%;
+}
+/*Einde logo opmaak*/
+
+/*Opmaak alle h1 titels*/
+h1{
+	font-size: 15px;
+}
+/*Einde h1 opmaak*/
+
+/*Grid wordt aangemaakt*/
+.grid-container{
+	grid-template-columns: 150px 300px 1fr 1fr 150px;
+}
+/*Einde grid-container opmaak*/
+
+/*Datum opmaak*/
+.datum #dag{
+	font-size: 14px;
+	padding-top: 100%;
+}
+
+.datum #datum, .datum #time{
+	font-size: 15px;
+}
+
+/*Einde datum opmaak*/
+
+/*Line chart opmaak*/
+.vak2 #day{
+	font-size: 15px;
+	padding-right: 10px;
+}
+/*Einde line chart opmaak*/
+
+/*Half doughnut opmaak*/
+.vak3 canvas{
+	min-width: 500px;
+	min-height: 250px;
+	margin-top: 20px;
+}
+
+.vak3 p{
+	font-size: 18px;
+	margin-top: -60px;
+}
+/*Einde half doughnut opmaak*/
+
+/*Doughnut opmaak*/
+.vak4 canvas{
+	max-width: 600px;
+	height: 600px;
+	margin-top:20px;
+}
+/*Einde doughnut opmaak*/
+
+/*Button opmaak*/
+
+.button{
+	padding: 10px 40px 10px 40px;
+	font-size: 15px;
+}
+/*Einde button opmaak*/
+}
+
+
+
+

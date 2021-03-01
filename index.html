@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Mandy - Dashboard SpaceX</title>
+		<link rel="stylesheet" type="text/css" href="dashboard.css">	
+		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+		<script src="main.js" defer></script>
+	</head>
+	<body>
+		<!--Logo-->
+		<div class="logo">
+			<img src="spacexlogo.png" alt="SpaceX logo"/>
+			<figcaption>YOUR TRIP TO MARS</figcaption>
+		</div>
+		<!--Einde logo-->
+
+		<!--Grid-->
+		<div class="grid-container">
+			<!--Vak 1 datum-->
+			<div class="vak1">
+				<h1>TODAY</h1>
+					<div class="datum">
+						<p id="dag">WEDNESDAY</p>
+						<p id="datum">17 SEPTEMBER 2030</p>
+						<p id="time">20:08</p>
+					</div>	
+			</div>
+			<<!--Einde vak 1-->
+
+			<!--Vak 2 distance-->
+			<div class="vak2">
+		  		<h1>TOTAL DISTANCE IN 10<sup>6</sup> KM</h1>
+				<canvas id="linechart" height="180px"></canvas>
+				<p id="day">Day</p>
+		  	</div>
+		  	<!--Einde vak 2-->
+
+		  	<!--Vak 3 fuel gauge-->
+			<div class="vak3">
+				<h1>FUEL GAUGE</h1>	
+  				<canvas id="gaugeChart"></canvas>
+  				<p>25%</p>
+			</div>
+			<!--Einde vak 3-->
+
+			<!--Vak 4 my day-->
+			<div class="vak4">
+				<h1>MY DAY</h1>
+				<canvas id="doughnutchart"></canvas>
+  			</div>  
+  			<!--Einde vak 4-->
+
+  			<!--Vak 5 stock of food chart-->
+			<div class="vak5">
+				<h1>STOCK OF FOOD</h1>
+				<canvas id="barchart" height="200"></canvas>
+			</div> 
+			<!--Einde vak 5-->
+		</div>
+		<!--Einde grid-->
+
+		<!--Button see more-->
+		<input type="button" class="button" value="SEE MORE">
+		<!--Einde button-->
+	</body>
+</html>
